@@ -1,0 +1,1976 @@
+{
+  "samples": [
+    {
+      "id": "s74",
+      "name": "141.319.05",
+      "category": "素板长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T14:09:04.598Z",
+      "updatedAt": "2026-02-11T14:09:04.598Z"
+    },
+    {
+      "id": "s1",
+      "name": "141.319.15",
+      "category": "本色长板",
+      "quantity": 2,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T16:50:00.702Z",
+      "updatedAt": "2026-02-10T16:50:00.702Z"
+    },
+    {
+      "id": "s2",
+      "name": "141.319.15",
+      "category": "本色长板",
+      "quantity": 0,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T16:50:21.246Z",
+      "updatedAt": "2026-02-10T17:08:30.585Z"
+    },
+    {
+      "id": "s6",
+      "name": "141.319.35",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:09:46.225Z",
+      "updatedAt": "2026-02-11T08:42:03.122Z"
+    },
+    {
+      "id": "s7",
+      "name": "141.319.51",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:10:16.721Z",
+      "updatedAt": "2026-02-10T17:10:16.721Z"
+    },
+    {
+      "id": "s8",
+      "name": "141.319.51",
+      "category": "颜色长板",
+      "quantity": 4,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:10:34.785Z",
+      "updatedAt": "2026-02-10T17:10:34.785Z"
+    },
+    {
+      "id": "s3",
+      "name": "141.319.54",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T16:51:16.197Z",
+      "updatedAt": "2026-02-10T16:51:16.197Z"
+    },
+    {
+      "id": "s4",
+      "name": "141.319.54",
+      "category": "颜色长板",
+      "quantity": 0,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T16:51:39.622Z",
+      "updatedAt": "2026-02-10T17:08:58.577Z"
+    },
+    {
+      "id": "s9",
+      "name": "141.319.61",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:10:55.513Z",
+      "updatedAt": "2026-02-10T17:10:55.513Z"
+    },
+    {
+      "id": "s10",
+      "name": "141.319.61",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:11:08.122Z",
+      "updatedAt": "2026-02-10T17:11:08.122Z"
+    },
+    {
+      "id": "s11",
+      "name": "143.317.13",
+      "category": "本色长板",
+      "quantity": 7,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:32:33.341Z",
+      "updatedAt": "2026-02-10T17:32:33.341Z"
+    },
+    {
+      "id": "s12",
+      "name": "143.319.36",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:32:56.876Z",
+      "updatedAt": "2026-02-10T17:32:56.876Z"
+    },
+    {
+      "id": "s13",
+      "name": "143.319.36",
+      "category": "本色长板",
+      "quantity": 3,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:33:11.796Z",
+      "updatedAt": "2026-02-10T17:33:11.796Z"
+    },
+    {
+      "id": "s14",
+      "name": "143.319.46",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:33:34.148Z",
+      "updatedAt": "2026-02-10T17:33:34.148Z"
+    },
+    {
+      "id": "s15",
+      "name": "143.319.46",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:33:50.644Z",
+      "updatedAt": "2026-02-10T17:33:50.644Z"
+    },
+    {
+      "id": "s16",
+      "name": "143.319.51",
+      "category": "颜色长板",
+      "quantity": 3,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:34:19.276Z",
+      "updatedAt": "2026-02-10T17:34:19.276Z"
+    },
+    {
+      "id": "s17",
+      "name": "143.319.54",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:34:39.764Z",
+      "updatedAt": "2026-02-10T17:34:39.764Z"
+    },
+    {
+      "id": "s18",
+      "name": "143.319.54",
+      "category": "本色长板",
+      "quantity": 2,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:34:53.413Z",
+      "updatedAt": "2026-02-10T17:34:53.413Z"
+    },
+    {
+      "id": "s19",
+      "name": "143.319.65",
+      "category": "颜色长板",
+      "quantity": 5,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:35:08.731Z",
+      "updatedAt": "2026-02-10T17:35:08.731Z"
+    },
+    {
+      "id": "s20",
+      "name": "143.319.65",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:35:22.676Z",
+      "updatedAt": "2026-02-10T17:35:22.676Z"
+    },
+    {
+      "id": "s37",
+      "name": "143.370.12",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:25:34.431Z",
+      "updatedAt": "2026-02-11T09:25:34.431Z"
+    },
+    {
+      "id": "s38",
+      "name": "143.370.12",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:25:46.679Z",
+      "updatedAt": "2026-02-11T09:25:46.679Z"
+    },
+    {
+      "id": "s21",
+      "name": "143.370.32",
+      "category": "本色长板",
+      "quantity": 6,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:35:41.635Z",
+      "updatedAt": "2026-02-10T17:35:41.635Z"
+    },
+    {
+      "id": "s22",
+      "name": "143.370.32",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:35:58.932Z",
+      "updatedAt": "2026-02-10T17:35:58.932Z"
+    },
+    {
+      "id": "s23",
+      "name": "143.370.32",
+      "category": "本色长板",
+      "quantity": 3,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-10T17:36:12.908Z",
+      "updatedAt": "2026-02-10T17:36:12.908Z"
+    },
+    {
+      "id": "s24",
+      "name": "151.419.04",
+      "category": "素板长板",
+      "quantity": 6,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T08:51:04.362Z",
+      "updatedAt": "2026-02-11T08:51:04.362Z"
+    },
+    {
+      "id": "s25",
+      "name": "151.419.04",
+      "category": "素板长板",
+      "quantity": 3,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T08:53:22.114Z",
+      "updatedAt": "2026-02-11T09:36:06.783Z"
+    },
+    {
+      "id": "s81",
+      "name": "151.422.02",
+      "category": "素板长板",
+      "quantity": 2,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:11:56.793Z",
+      "updatedAt": "2026-02-12T10:11:56.793Z"
+    },
+    {
+      "id": "s82",
+      "name": "151.422.02",
+      "category": "素板长板",
+      "quantity": 1,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:12:09.178Z",
+      "updatedAt": "2026-02-12T10:12:09.178Z"
+    },
+    {
+      "id": "s75",
+      "name": "151.426.02",
+      "category": "素板长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T08:47:39.092Z",
+      "updatedAt": "2026-02-12T08:47:39.092Z"
+    },
+    {
+      "id": "s76",
+      "name": "151.426.02",
+      "category": "素板长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T08:49:37.794Z",
+      "updatedAt": "2026-02-12T08:49:37.794Z"
+    },
+    {
+      "id": "s77",
+      "name": "151.426.02",
+      "category": "素板长板",
+      "quantity": 1,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T08:50:06.050Z",
+      "updatedAt": "2026-02-12T08:50:06.050Z"
+    },
+    {
+      "id": "s26",
+      "name": "153.319.55",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T08:55:33.793Z",
+      "updatedAt": "2026-02-11T08:55:33.793Z"
+    },
+    {
+      "id": "s28",
+      "name": "153.419.38",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T08:57:52.649Z",
+      "updatedAt": "2026-02-11T08:57:52.649Z"
+    },
+    {
+      "id": "s29",
+      "name": "153.419.50",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T08:58:08.680Z",
+      "updatedAt": "2026-02-11T08:58:08.680Z"
+    },
+    {
+      "id": "s30",
+      "name": "153.419.51",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T08:58:23.192Z",
+      "updatedAt": "2026-02-11T08:58:23.192Z"
+    },
+    {
+      "id": "s27",
+      "name": "153.419.53",
+      "category": "颜色长板",
+      "quantity": 3,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T08:55:59.297Z",
+      "updatedAt": "2026-02-11T08:55:59.297Z"
+    },
+    {
+      "id": "s31",
+      "name": "153.419.62",
+      "category": "颜色长板",
+      "quantity": 10,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:23:48.479Z",
+      "updatedAt": "2026-02-11T09:23:48.479Z"
+    },
+    {
+      "id": "s32",
+      "name": "153.419.91",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:24:11.991Z",
+      "updatedAt": "2026-02-11T09:24:11.991Z"
+    },
+    {
+      "id": "s33",
+      "name": "153.419.91",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:24:27.223Z",
+      "updatedAt": "2026-02-11T09:24:27.223Z"
+    },
+    {
+      "id": "s34",
+      "name": "153.419.91",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:24:39.448Z",
+      "updatedAt": "2026-02-11T09:24:39.448Z"
+    },
+    {
+      "id": "s35",
+      "name": "153.422.35",
+      "category": "本色长板",
+      "quantity": 2,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:25:03.250Z",
+      "updatedAt": "2026-02-11T09:25:03.250Z"
+    },
+    {
+      "id": "s36",
+      "name": "153.422.38",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:25:16.455Z",
+      "updatedAt": "2026-02-11T09:25:16.455Z"
+    },
+    {
+      "id": "s39",
+      "name": "155.389.04",
+      "category": "素板长板",
+      "quantity": 5,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:42:31.986Z",
+      "updatedAt": "2026-02-11T09:42:31.986Z"
+    },
+    {
+      "id": "s42",
+      "name": "155.389.59",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:43:15.363Z",
+      "updatedAt": "2026-02-11T09:43:15.363Z"
+    },
+    {
+      "id": "s43",
+      "name": "155.419.38",
+      "category": "本色长板",
+      "quantity": 2,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:48:03.282Z",
+      "updatedAt": "2026-02-11T09:48:03.282Z"
+    },
+    {
+      "id": "s44",
+      "name": "155.419.38",
+      "category": "本色长板",
+      "quantity": 2,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:48:16.201Z",
+      "updatedAt": "2026-02-11T09:48:16.201Z"
+    },
+    {
+      "id": "s45",
+      "name": "158.319.51",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:48:29.016Z",
+      "updatedAt": "2026-02-11T09:48:29.016Z"
+    },
+    {
+      "id": "s46",
+      "name": "158.319.51",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:48:45.416Z",
+      "updatedAt": "2026-02-11T09:48:45.416Z"
+    },
+    {
+      "id": "s40",
+      "name": "158.319.54",
+      "category": "颜色长板",
+      "quantity": 4,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:42:46.762Z",
+      "updatedAt": "2026-02-11T09:42:46.762Z"
+    },
+    {
+      "id": "s41",
+      "name": "158.319.54",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:43:01.492Z",
+      "updatedAt": "2026-02-11T09:43:01.492Z"
+    },
+    {
+      "id": "s47",
+      "name": "161.622.03",
+      "category": "素板长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T09:48:59.096Z",
+      "updatedAt": "2026-02-11T09:48:59.096Z"
+    },
+    {
+      "id": "s78",
+      "name": "161.622.03",
+      "category": "素板长板",
+      "quantity": 1,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:10:14.746Z",
+      "updatedAt": "2026-02-12T10:10:14.746Z"
+    },
+    {
+      "id": "s79",
+      "name": "161.622.66",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:10:47.202Z",
+      "updatedAt": "2026-02-12T10:10:47.202Z"
+    },
+    {
+      "id": "s80",
+      "name": "161.622.66",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:10:57.938Z",
+      "updatedAt": "2026-02-12T10:10:57.938Z"
+    },
+    {
+      "id": "s48",
+      "name": "201.619.33",
+      "category": "本色长板",
+      "quantity": 12,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T10:04:51.494Z",
+      "updatedAt": "2026-02-11T10:04:51.494Z"
+    },
+    {
+      "id": "s49",
+      "name": "201.619.35",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T10:05:06.661Z",
+      "updatedAt": "2026-02-11T10:05:06.661Z"
+    },
+    {
+      "id": "s84",
+      "name": "201.622.04",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:12:34.561Z",
+      "updatedAt": "2026-02-12T10:12:34.561Z"
+    },
+    {
+      "id": "s50",
+      "name": "201.622.14",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T10:05:17.797Z",
+      "updatedAt": "2026-02-11T10:05:17.797Z"
+    },
+    {
+      "id": "s83",
+      "name": "201.622.14",
+      "category": "本色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:12:22.225Z",
+      "updatedAt": "2026-02-12T10:12:22.225Z"
+    },
+    {
+      "id": "s85",
+      "name": "201.626.02",
+      "category": "素板长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:12:51.914Z",
+      "updatedAt": "2026-02-12T10:12:51.914Z"
+    },
+    {
+      "id": "s86",
+      "name": "201.626.02",
+      "category": "素板长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:13:04.009Z",
+      "updatedAt": "2026-02-12T10:13:04.009Z"
+    },
+    {
+      "id": "s87",
+      "name": "201.626.02",
+      "category": "素板长板",
+      "quantity": 2,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-12T10:13:17.673Z",
+      "updatedAt": "2026-02-12T10:13:17.673Z"
+    },
+    {
+      "id": "s51",
+      "name": "243.319.61",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T10:05:30.644Z",
+      "updatedAt": "2026-02-11T10:05:30.644Z"
+    },
+    {
+      "id": "s52",
+      "name": "243.319.61",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T10:05:43.613Z",
+      "updatedAt": "2026-02-11T10:05:43.613Z"
+    },
+    {
+      "id": "s58",
+      "name": "251.419.51",
+      "category": "颜色长板",
+      "quantity": 8,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:12:16.134Z",
+      "updatedAt": "2026-02-11T11:12:16.134Z"
+    },
+    {
+      "id": "s56",
+      "name": "251.419.57",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:11:16.990Z",
+      "updatedAt": "2026-02-11T11:11:16.990Z"
+    },
+    {
+      "id": "s57",
+      "name": "251.419.57",
+      "category": "颜色长板",
+      "quantity": 3,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:11:32.311Z",
+      "updatedAt": "2026-02-11T11:11:32.311Z"
+    },
+    {
+      "id": "s59",
+      "name": "251.419.62",
+      "category": "颜色长板",
+      "quantity": 5,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:13:06.542Z",
+      "updatedAt": "2026-02-11T11:13:06.542Z"
+    },
+    {
+      "id": "s60",
+      "name": "251.419.62",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:13:22.239Z",
+      "updatedAt": "2026-02-11T11:13:22.239Z"
+    },
+    {
+      "id": "s61",
+      "name": "251.419.66",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:13:37.734Z",
+      "updatedAt": "2026-02-11T11:13:37.734Z"
+    },
+    {
+      "id": "s62",
+      "name": "251.419.92",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:13:53.734Z",
+      "updatedAt": "2026-02-11T11:13:53.734Z"
+    },
+    {
+      "id": "s63",
+      "name": "251.419.92",
+      "category": "颜色长板",
+      "quantity": 3,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:14:06.470Z",
+      "updatedAt": "2026-02-11T11:14:06.470Z"
+    },
+    {
+      "id": "s64",
+      "name": "251.419.92",
+      "category": "颜色长板",
+      "quantity": 3,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:14:18.534Z",
+      "updatedAt": "2026-02-11T11:14:18.534Z"
+    },
+    {
+      "id": "s53",
+      "name": "543.319.11",
+      "category": "本色长板",
+      "quantity": 2,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:03:18.688Z",
+      "updatedAt": "2026-02-11T11:03:18.688Z"
+    },
+    {
+      "id": "s54",
+      "name": "543.319.11",
+      "category": "本色长板",
+      "quantity": 4,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:03:34.808Z",
+      "updatedAt": "2026-02-11T11:03:34.808Z"
+    },
+    {
+      "id": "s55",
+      "name": "543.319.21",
+      "category": "本色长板",
+      "quantity": 6,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:04:17.249Z",
+      "updatedAt": "2026-02-11T11:04:17.249Z"
+    },
+    {
+      "id": "s65",
+      "name": "543.319.54",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:24:46.516Z",
+      "updatedAt": "2026-02-11T11:24:46.516Z"
+    },
+    {
+      "id": "s68",
+      "name": "543.319.63",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:39:56.193Z",
+      "updatedAt": "2026-02-11T11:39:56.193Z"
+    },
+    {
+      "id": "s69",
+      "name": "543.319.63",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:40:09.433Z",
+      "updatedAt": "2026-02-11T11:40:09.433Z"
+    },
+    {
+      "id": "s70",
+      "name": "543.319.63",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "大",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:40:23.952Z",
+      "updatedAt": "2026-02-11T11:40:23.952Z"
+    },
+    {
+      "id": "s71",
+      "name": "543.319.65",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:40:38.440Z",
+      "updatedAt": "2026-02-11T11:40:38.440Z"
+    },
+    {
+      "id": "s72",
+      "name": "543.319.72",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:41:00.952Z",
+      "updatedAt": "2026-02-11T11:41:00.952Z"
+    },
+    {
+      "id": "s73",
+      "name": "543.319.72",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:41:14.216Z",
+      "updatedAt": "2026-02-11T11:41:14.216Z"
+    },
+    {
+      "id": "s66",
+      "name": "543.319.91",
+      "category": "颜色长板",
+      "quantity": 7,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:38:40.042Z",
+      "updatedAt": "2026-02-11T11:38:40.042Z"
+    },
+    {
+      "id": "s67",
+      "name": "543.319.91",
+      "category": "颜色长板",
+      "quantity": 1,
+      "size": "中",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:38:59.505Z",
+      "updatedAt": "2026-02-11T11:38:59.505Z"
+    },
+    {
+      "id": "s74",
+      "name": "543.319.92",
+      "category": "颜色长板",
+      "quantity": 2,
+      "size": "小",
+      "location": "",
+      "notes": "",
+      "warningThreshold": 5,
+      "createdAt": "2026-02-11T11:41:30.924Z",
+      "updatedAt": "2026-02-11T11:41:30.924Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "c1",
+      "name": "本色",
+      "color": "#0ea5e9",
+      "description": "本色除了长板",
+      "createdAt": "2026-02-10T16:46:52.608Z"
+    },
+    {
+      "id": "c2",
+      "name": "本色长板",
+      "color": "#91e60f",
+      "description": "",
+      "createdAt": "2026-02-10T16:47:26.296Z"
+    },
+    {
+      "id": "c3",
+      "name": "颜色",
+      "color": "#e60f96",
+      "description": "颜色除了长板",
+      "createdAt": "2026-02-10T16:47:51.129Z"
+    },
+    {
+      "id": "c4",
+      "name": "颜色长板",
+      "color": "#e68c0f",
+      "description": "",
+      "createdAt": "2026-02-10T16:48:14.718Z"
+    },
+    {
+      "id": "c5",
+      "name": "素板",
+      "color": "#e6e60f",
+      "description": "素板除了长板",
+      "createdAt": "2026-02-10T16:48:43.886Z"
+    },
+    {
+      "id": "c6",
+      "name": "素板长板",
+      "color": "#6e0fe6",
+      "description": "",
+      "createdAt": "2026-02-10T16:49:14.782Z"
+    }
+  ],
+  "activityLog": [
+    {
+      "id": "a110",
+      "timestamp": "2026-02-12T11:30:12.086Z",
+      "action": "下载备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "操作员"
+    },
+    {
+      "id": "a109",
+      "timestamp": "2026-02-12T11:30:10.123Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "操作员"
+    },
+    {
+      "id": "a108",
+      "timestamp": "2026-02-12T10:13:17.673Z",
+      "action": "添加",
+      "sample": "201.626.02",
+      "quantity": 2,
+      "user": "操作员"
+    },
+    {
+      "id": "a107",
+      "timestamp": "2026-02-12T10:13:04.009Z",
+      "action": "添加",
+      "sample": "201.626.02",
+      "quantity": 1,
+      "user": "操作员"
+    },
+    {
+      "id": "a106",
+      "timestamp": "2026-02-12T10:12:51.914Z",
+      "action": "添加",
+      "sample": "201.626.02",
+      "quantity": 1,
+      "user": "操作员"
+    },
+    {
+      "id": "a105",
+      "timestamp": "2026-02-12T10:12:34.562Z",
+      "action": "添加",
+      "sample": "201.622.04",
+      "quantity": 1,
+      "user": "操作员"
+    },
+    {
+      "id": "a104",
+      "timestamp": "2026-02-12T10:12:22.226Z",
+      "action": "添加",
+      "sample": "201.622.14",
+      "quantity": 1,
+      "user": "操作员"
+    },
+    {
+      "id": "a103",
+      "timestamp": "2026-02-12T10:12:09.178Z",
+      "action": "添加",
+      "sample": "151.422.02",
+      "quantity": 1,
+      "user": "操作员"
+    },
+    {
+      "id": "a102",
+      "timestamp": "2026-02-12T10:11:56.794Z",
+      "action": "添加",
+      "sample": "151.422.02",
+      "quantity": 2,
+      "user": "操作员"
+    },
+    {
+      "id": "a101",
+      "timestamp": "2026-02-12T10:10:57.938Z",
+      "action": "添加",
+      "sample": "161.622.66",
+      "quantity": 1,
+      "user": "操作员"
+    },
+    {
+      "id": "a100",
+      "timestamp": "2026-02-12T10:10:47.202Z",
+      "action": "添加",
+      "sample": "161.622.66",
+      "quantity": 1,
+      "user": "操作员"
+    },
+    {
+      "id": "a99",
+      "timestamp": "2026-02-12T10:10:14.747Z",
+      "action": "添加",
+      "sample": "161.622.03",
+      "quantity": 1,
+      "user": "操作员"
+    },
+    {
+      "id": "a98",
+      "timestamp": "2026-02-12T08:50:59.931Z",
+      "action": "下载备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "操作员"
+    },
+    {
+      "id": "a97",
+      "timestamp": "2026-02-12T08:50:49.019Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "操作员"
+    },
+    {
+      "id": "a96",
+      "timestamp": "2026-02-12T08:50:06.050Z",
+      "action": "添加",
+      "sample": "151.426.02",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a95",
+      "timestamp": "2026-02-12T08:49:37.794Z",
+      "action": "添加",
+      "sample": "151.426.02",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a94",
+      "timestamp": "2026-02-12T08:47:39.092Z",
+      "action": "添加",
+      "sample": "151.426.02",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a93",
+      "timestamp": "2026-02-11T14:09:04.598Z",
+      "action": "添加",
+      "sample": "141.319.05",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a92",
+      "timestamp": "2026-02-11T14:08:48.547Z",
+      "action": "删除",
+      "sample": "141.319.05",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a91",
+      "timestamp": "2026-02-11T14:08:18.123Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a90",
+      "timestamp": "2026-02-11T12:57:20.123Z",
+      "action": "下载备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a89",
+      "timestamp": "2026-02-11T12:53:17.898Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "操作员"
+    },
+    {
+      "id": "a88",
+      "timestamp": "2026-02-11T12:42:47.924Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a87",
+      "timestamp": "2026-02-11T12:42:46.189Z",
+      "action": "删除备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a86",
+      "timestamp": "2026-02-11T12:02:56.028Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a85",
+      "timestamp": "2026-02-11T11:41:30.924Z",
+      "action": "添加",
+      "sample": "543.319.92",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a84",
+      "timestamp": "2026-02-11T11:41:14.216Z",
+      "action": "添加",
+      "sample": "543.319.72",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a83",
+      "timestamp": "2026-02-11T11:41:00.953Z",
+      "action": "添加",
+      "sample": "543.319.72",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a82",
+      "timestamp": "2026-02-11T11:40:38.440Z",
+      "action": "添加",
+      "sample": "543.319.65",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a81",
+      "timestamp": "2026-02-11T11:40:23.952Z",
+      "action": "添加",
+      "sample": "543.319.63",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a80",
+      "timestamp": "2026-02-11T11:40:09.433Z",
+      "action": "添加",
+      "sample": "543.319.63",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a79",
+      "timestamp": "2026-02-11T11:39:56.193Z",
+      "action": "添加",
+      "sample": "543.319.63",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a78",
+      "timestamp": "2026-02-11T11:38:59.505Z",
+      "action": "添加",
+      "sample": "543.319.91",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a77",
+      "timestamp": "2026-02-11T11:38:40.042Z",
+      "action": "添加",
+      "sample": "543.319.91",
+      "quantity": 7,
+      "user": "管理员"
+    },
+    {
+      "id": "a76",
+      "timestamp": "2026-02-11T11:24:46.516Z",
+      "action": "添加",
+      "sample": "543.319.54",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a75",
+      "timestamp": "2026-02-11T11:14:18.534Z",
+      "action": "添加",
+      "sample": "251.419.92",
+      "quantity": 3,
+      "user": "管理员"
+    },
+    {
+      "id": "a74",
+      "timestamp": "2026-02-11T11:14:06.470Z",
+      "action": "添加",
+      "sample": "251.419.92",
+      "quantity": 3,
+      "user": "管理员"
+    },
+    {
+      "id": "a73",
+      "timestamp": "2026-02-11T11:13:53.734Z",
+      "action": "添加",
+      "sample": "251.419.92",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a72",
+      "timestamp": "2026-02-11T11:13:37.734Z",
+      "action": "添加",
+      "sample": "251.419.66",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a71",
+      "timestamp": "2026-02-11T11:13:22.239Z",
+      "action": "添加",
+      "sample": "251.419.62",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a70",
+      "timestamp": "2026-02-11T11:13:06.542Z",
+      "action": "添加",
+      "sample": "251.419.62",
+      "quantity": 5,
+      "user": "管理员"
+    },
+    {
+      "id": "a69",
+      "timestamp": "2026-02-11T11:12:16.134Z",
+      "action": "添加",
+      "sample": "251.419.51",
+      "quantity": 8,
+      "user": "管理员"
+    },
+    {
+      "id": "a68",
+      "timestamp": "2026-02-11T11:11:32.311Z",
+      "action": "添加",
+      "sample": "251.419.57",
+      "quantity": 3,
+      "user": "管理员"
+    },
+    {
+      "id": "a67",
+      "timestamp": "2026-02-11T11:11:16.991Z",
+      "action": "添加",
+      "sample": "251.419.57",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a66",
+      "timestamp": "2026-02-11T11:04:17.249Z",
+      "action": "添加",
+      "sample": "543.319.21",
+      "quantity": 6,
+      "user": "管理员"
+    },
+    {
+      "id": "a65",
+      "timestamp": "2026-02-11T11:03:34.808Z",
+      "action": "添加",
+      "sample": "543.319.11",
+      "quantity": 4,
+      "user": "管理员"
+    },
+    {
+      "id": "a64",
+      "timestamp": "2026-02-11T11:03:18.688Z",
+      "action": "添加",
+      "sample": "543.319.11",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a63",
+      "timestamp": "2026-02-11T10:05:43.613Z",
+      "action": "添加",
+      "sample": "243.319.61",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a62",
+      "timestamp": "2026-02-11T10:05:30.644Z",
+      "action": "添加",
+      "sample": "243.319.61",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a61",
+      "timestamp": "2026-02-11T10:05:17.797Z",
+      "action": "添加",
+      "sample": "201.622.14",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a60",
+      "timestamp": "2026-02-11T10:05:06.661Z",
+      "action": "添加",
+      "sample": "201.619.35",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a59",
+      "timestamp": "2026-02-11T10:04:51.494Z",
+      "action": "添加",
+      "sample": "201.619.33",
+      "quantity": 12,
+      "user": "管理员"
+    },
+    {
+      "id": "a58",
+      "timestamp": "2026-02-11T09:48:59.096Z",
+      "action": "添加",
+      "sample": "161.622.03",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a57",
+      "timestamp": "2026-02-11T09:48:45.416Z",
+      "action": "添加",
+      "sample": "158.319.51",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a56",
+      "timestamp": "2026-02-11T09:48:29.016Z",
+      "action": "添加",
+      "sample": "158.319.51",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a55",
+      "timestamp": "2026-02-11T09:48:16.201Z",
+      "action": "添加",
+      "sample": "155.419.38",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a54",
+      "timestamp": "2026-02-11T09:48:03.282Z",
+      "action": "添加",
+      "sample": "155.419.38",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a53",
+      "timestamp": "2026-02-11T09:43:15.363Z",
+      "action": "添加",
+      "sample": "155.389.59",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a52",
+      "timestamp": "2026-02-11T09:43:01.492Z",
+      "action": "添加",
+      "sample": "158.319.54",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a51",
+      "timestamp": "2026-02-11T09:42:46.762Z",
+      "action": "添加",
+      "sample": "158.319.54",
+      "quantity": 4,
+      "user": "管理员"
+    },
+    {
+      "id": "a50",
+      "timestamp": "2026-02-11T09:42:31.986Z",
+      "action": "添加",
+      "sample": "155.389.04",
+      "quantity": 5,
+      "user": "管理员"
+    },
+    {
+      "id": "a49",
+      "timestamp": "2026-02-11T09:36:06.783Z",
+      "action": "更新",
+      "sample": "151.419.04",
+      "quantity": 3,
+      "user": "管理员"
+    },
+    {
+      "id": "a48",
+      "timestamp": "2026-02-11T09:25:46.679Z",
+      "action": "添加",
+      "sample": "143.370.12",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a47",
+      "timestamp": "2026-02-11T09:25:34.431Z",
+      "action": "添加",
+      "sample": "143.370.12",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a46",
+      "timestamp": "2026-02-11T09:25:16.455Z",
+      "action": "添加",
+      "sample": "153.422.38",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a45",
+      "timestamp": "2026-02-11T09:25:03.251Z",
+      "action": "添加",
+      "sample": "153.422.35",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a44",
+      "timestamp": "2026-02-11T09:24:39.448Z",
+      "action": "添加",
+      "sample": "153.419.91",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a43",
+      "timestamp": "2026-02-11T09:24:27.223Z",
+      "action": "添加",
+      "sample": "153.419.91",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a42",
+      "timestamp": "2026-02-11T09:24:11.991Z",
+      "action": "添加",
+      "sample": "153.419.91",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a41",
+      "timestamp": "2026-02-11T09:23:48.479Z",
+      "action": "添加",
+      "sample": "153.419.62",
+      "quantity": 10,
+      "user": "管理员"
+    },
+    {
+      "id": "a40",
+      "timestamp": "2026-02-11T08:58:23.192Z",
+      "action": "添加",
+      "sample": "153.419.51",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a39",
+      "timestamp": "2026-02-11T08:58:08.680Z",
+      "action": "添加",
+      "sample": "153.419.50",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a38",
+      "timestamp": "2026-02-11T08:57:52.649Z",
+      "action": "添加",
+      "sample": "153.419.38",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a37",
+      "timestamp": "2026-02-11T08:55:59.297Z",
+      "action": "添加",
+      "sample": "153.419.53",
+      "quantity": 3,
+      "user": "管理员"
+    },
+    {
+      "id": "a36",
+      "timestamp": "2026-02-11T08:55:33.793Z",
+      "action": "添加",
+      "sample": "153.319.55",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a35",
+      "timestamp": "2026-02-11T08:53:22.114Z",
+      "action": "添加",
+      "sample": "151.419.04",
+      "quantity": 3,
+      "user": "管理员"
+    },
+    {
+      "id": "a34",
+      "timestamp": "2026-02-11T08:51:04.362Z",
+      "action": "添加",
+      "sample": "151.419.04",
+      "quantity": 6,
+      "user": "管理员"
+    },
+    {
+      "id": "a33",
+      "timestamp": "2026-02-11T08:42:03.122Z",
+      "action": "更新",
+      "sample": "141.319.35",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a32",
+      "timestamp": "2026-02-11T08:39:57.696Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a31",
+      "timestamp": "2026-02-11T08:36:05.418Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a30",
+      "timestamp": "2026-02-10T17:47:46.058Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a29",
+      "timestamp": "2026-02-10T17:36:30.483Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a28",
+      "timestamp": "2026-02-10T17:36:12.908Z",
+      "action": "添加",
+      "sample": "143.370.32",
+      "quantity": 3,
+      "user": "管理员"
+    },
+    {
+      "id": "a27",
+      "timestamp": "2026-02-10T17:35:58.932Z",
+      "action": "添加",
+      "sample": "143.370.32",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a26",
+      "timestamp": "2026-02-10T17:35:41.636Z",
+      "action": "添加",
+      "sample": "143.370.32",
+      "quantity": 6,
+      "user": "管理员"
+    },
+    {
+      "id": "a25",
+      "timestamp": "2026-02-10T17:35:22.676Z",
+      "action": "添加",
+      "sample": "143.319.65",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a24",
+      "timestamp": "2026-02-10T17:35:08.731Z",
+      "action": "添加",
+      "sample": "143.319.65",
+      "quantity": 5,
+      "user": "管理员"
+    },
+    {
+      "id": "a23",
+      "timestamp": "2026-02-10T17:34:53.413Z",
+      "action": "添加",
+      "sample": "143.319.54",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a22",
+      "timestamp": "2026-02-10T17:34:39.764Z",
+      "action": "添加",
+      "sample": "143.319.54",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a21",
+      "timestamp": "2026-02-10T17:34:19.276Z",
+      "action": "添加",
+      "sample": "143.319.51",
+      "quantity": 3,
+      "user": "管理员"
+    },
+    {
+      "id": "a20",
+      "timestamp": "2026-02-10T17:33:50.645Z",
+      "action": "添加",
+      "sample": "143.319.46",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a19",
+      "timestamp": "2026-02-10T17:33:34.148Z",
+      "action": "添加",
+      "sample": "143.319.46",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a18",
+      "timestamp": "2026-02-10T17:33:11.796Z",
+      "action": "添加",
+      "sample": "143.319.36",
+      "quantity": 3,
+      "user": "管理员"
+    },
+    {
+      "id": "a17",
+      "timestamp": "2026-02-10T17:32:56.876Z",
+      "action": "添加",
+      "sample": "143.319.36",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a16",
+      "timestamp": "2026-02-10T17:32:33.341Z",
+      "action": "添加",
+      "sample": "143.317.13",
+      "quantity": 7,
+      "user": "管理员"
+    },
+    {
+      "id": "a15",
+      "timestamp": "2026-02-10T17:11:08.122Z",
+      "action": "添加",
+      "sample": "141.319.61",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a14",
+      "timestamp": "2026-02-10T17:10:55.513Z",
+      "action": "添加",
+      "sample": "141.319.61",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a13",
+      "timestamp": "2026-02-10T17:10:34.785Z",
+      "action": "添加",
+      "sample": "141.319.51",
+      "quantity": 4,
+      "user": "管理员"
+    },
+    {
+      "id": "a12",
+      "timestamp": "2026-02-10T17:10:16.721Z",
+      "action": "添加",
+      "sample": "141.319.51",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a11",
+      "timestamp": "2026-02-10T17:09:55.417Z",
+      "action": "更新",
+      "sample": "141.319.05",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a10",
+      "timestamp": "2026-02-10T17:09:46.225Z",
+      "action": "添加",
+      "sample": "141.319.35",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a9",
+      "timestamp": "2026-02-10T17:09:25.929Z",
+      "action": "添加",
+      "sample": "141.319.05",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a8",
+      "timestamp": "2026-02-10T17:08:58.580Z",
+      "action": "更新",
+      "sample": "141.319.54",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a7",
+      "timestamp": "2026-02-10T17:08:30.589Z",
+      "action": "更新",
+      "sample": "141.319.15",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a6",
+      "timestamp": "2026-02-10T16:52:11.477Z",
+      "action": "备份",
+      "sample": "系统",
+      "quantity": 0,
+      "user": "管理员"
+    },
+    {
+      "id": "a5",
+      "timestamp": "2026-02-10T16:51:39.622Z",
+      "action": "添加",
+      "sample": "141.319.54",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a4",
+      "timestamp": "2026-02-10T16:51:16.197Z",
+      "action": "添加",
+      "sample": "141.319.54",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a3",
+      "timestamp": "2026-02-10T16:50:21.246Z",
+      "action": "添加",
+      "sample": "141.319.15",
+      "quantity": 1,
+      "user": "管理员"
+    },
+    {
+      "id": "a2",
+      "timestamp": "2026-02-10T16:50:00.702Z",
+      "action": "添加",
+      "sample": "141.319.15",
+      "quantity": 2,
+      "user": "管理员"
+    },
+    {
+      "id": "a1",
+      "timestamp": "2026-02-10T16:48:52.974Z",
+      "action": "更新",
+      "sample": "分类 \"颜色长板\"",
+      "quantity": 0,
+      "user": "管理员"
+    }
+  ],
+  "timestamp": "2026-02-12T11:30:10.123Z",
+  "description": "手动备份"
+}
