@@ -1126,105 +1126,34 @@ const CONFIG = {
 };
 
 // GitHub API相关函数
-const GitHubAPI = {
-  // 获取文件内容
-  async getFileContent(repo, path, branch = 'main') {
-    try {
-      const url = `https://api.github.com/repos/${CONFIG.githubUsername}/${repo}/contents/${path}?ref=${branch}`;
-      const response = await fetch(url);
-      
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      
-      const data = await response.json();
-      const content = atob(data.content);
-      return JSON.parse(content);
-    } catch (error) {
-      console.error(`获取文件 ${path} 失败:`, error);
-      return null;
-    }
-  },
-  
-  // 创建或更新文件
-  async createOrUpdateFile(repo, path, content, message, branch = 'main') {
-    try {
-      // 首先获取当前文件的SHA（如果存在）
-      const url = `https://api.github.com/repos/${CONFIG.githubUsername}/${repo}/contents/${path}?ref=${branch}`;
-      let sha = null;
-      
-      try {
-        const response = await fetch(url);
-        if (response.ok) {
-          const data = await response.json();
-          sha = data.sha;
-        }
-      } catch (error) {
-        // 文件可能不存在，继续执行
-        console.log(`文件 ${path} 可能不存在，将创建新文件`);
-      }
-      
-      // 准备提交数据
-      const commitData = {
-        message: message,
-        content: btoa(JSON.stringify(content, null, 2)),
-        branch: branch
-      };
-      
-      if (sha) {
-        commitData.sha = sha;
-      }
-      
-      // 发送PUT请求
-      const response = await fetch(url, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `token ${localStorage.getItem('githubToken') || ''}`
-        },
-        body: JSON.stringify(commitData)
-      });
-      
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({ message: response.statusText }));
-        throw new Error(`提交失败: ${errorData.message || response.statusText}`);
-      }
-      
-      return await response.json();
-    } catch (error) {
-      console.error(`更新文件 ${path} 失败:`, error);
-      throw error;
-    }
-  }
-};
-
-// 数据管理类（语法完全修正，逻辑整合）
 const DataManager = {
-  // 核心函数：从 GitHub 加载数据（带 Token 认证，解决 403 限制）
   loadDataFromGithub: async function() {
     console.log('正在从GitHub加载数据...');
-    // 复用 CONFIG 配置，避免硬编码
-    const apiUrl = `https://api.github.com/repos/${CONFIG.githubUsername}/sample-management-system/contents/data/sample-management-data.json?ref=main`;
-    // 优先从 localStorage 取 Token，没有则用固定 Token（测试用）
-    const GITHUB_TOKEN = localStorage.getItem('githubToken') || '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';
+    const rawFileUrl = 'https://raw.githubusercontent.com/nicolettavoong/sample-management-system/main/data/sample-management-data.json';
 
     try {
-      const response = await fetch(apiUrl, {
-        headers: {
-          'User-Agent': 'SampleManagementSystem', // GitHub API 必须的请求头
-          'Authorization': `token ${GITHUB_TOKEN}` // 认证提升配额
-        }
-      });
-
+      const response = await fetch(rawFileUrl);
+      if (response.status === 404) {
+        throw new Error(`404 Not Found：文件地址错误：${rawFileUrl}`);
+      }
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const data = await response.json();
-      // 解码 GitHub 返回的 Base64 内容
-      const decodedContent = atob(data.content);
-      const jsonData = JSON.parse(decodedContent);
-      console.log('数据加载成功:', jsonData);
+      // 第一步：打印原始文本（确认下载的是正确内容）
+      const rawText = await response.text();
+      console.log('📝 原始文本内容（前500字符）:', rawText.substring(0, 500));
+      console.log('📝 原始文本完整内容:', rawText); // 查看完整文本
+
+      // 第二步：解析JSON并打印完整结构
+      const jsonData = JSON.parse(rawText);
+      console.log('✅ 完整JSON数据（展开查看）:', jsonData);
+      // 打印关键字段，方便快速验证
+      console.log('🔍 关键数据验证：');
+      console.log('   - samples数量:', jsonData.samples?.length || '无samples字段');
+      console.log('   - categories数量:', jsonData.categories?.length || '无categories字段');
+      console.log('   - 时间戳:', jsonData.timestamp || '无timestamp字段');
+
       return jsonData;
     } catch (error) {
       console.error('获取文件失败:', error);
@@ -1233,15 +1162,14 @@ const DataManager = {
     }
   },
 
-  // 自动刷新数据函数（整合到 DataManager 内）
   autoRefreshData: async function() {
     console.log('自动刷新数据...');
     await this.loadDataFromGithub();
   }
 };
 
-// 可选：页面加载时自动执行（如需启用，取消注释）
-// DataManager.autoRefreshData();
+// 执行加载
+DataManager.autoRefreshData();
       
       // 初始化数据
       async initializeData() {
