@@ -1120,115 +1120,128 @@
       refreshInterval: 10000 // 10秒刷新一次数据，提高实时性
     };
 
-    // GitHub API相关函数
-    const GitHubAPI = {
-      // 获取文件内容
-      async getFileContent(repo, path, branch = 'main') {
-        try {
-          const url = `https://api.github.com/repos/${CONFIG.githubUsername}/${repo}/contents/${path}?ref=${branch}`;
-          const response = await fetch(url);
-          
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          
-          const data = await response.json();
-          const content = atob(data.content);
-          return JSON.parse(content);
-        } catch (error) {
-          console.error(`获取文件 ${path} 失败:`, error);
-          return null;
-        }
-      },
+    // 先定义配置项（确保 CONFIG 存在，避免报错）
+const CONFIG = {
+  githubUsername: 'nicolettavoong' // 你的 GitHub 用户名
+};
+
+// GitHub API相关函数
+const GitHubAPI = {
+  // 获取文件内容
+  async getFileContent(repo, path, branch = 'main') {
+    try {
+      const url = `https://api.github.com/repos/${CONFIG.githubUsername}/${repo}/contents/${path}?ref=${branch}`;
+      const response = await fetch(url);
       
-      // 创建或更新文件
-      async createOrUpdateFile(repo, path, content, message, branch = 'main') {
-        try {
-          // 首先获取当前文件的SHA（如果存在）
-          const url = `https://api.github.com/repos/${CONFIG.githubUsername}/${repo}/contents/${path}?ref=${branch}`;
-          let sha = null;
-          
-          try {
-            const response = await fetch(url);
-            if (response.ok) {
-              const data = await response.json();
-              sha = data.sha;
-            }
-          } catch (error) {
-            // 文件可能不存在，继续执行
-            console.log(`文件 ${path} 可能不存在，将创建新文件`);
-          }
-          
-          // 准备提交数据
-          const commitData = {
-            message: message,
-            content: btoa(JSON.stringify(content, null, 2)),
-            branch: branch
-          };
-          
-          if (sha) {
-            commitData.sha = sha;
-          }
-          
-          // 发送PUT请求
-          const response = await fetch(url, {
-            method: 'PUT',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `token ${localStorage.getItem('githubToken') || ''}`
-            },
-            body: JSON.stringify(commitData)
-          });
-          
-          if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(`提交失败: ${errorData.message || response.statusText}`);
-          }
-          
-          return await response.json();
-        } catch (error) {
-          console.error(`更新文件 ${path} 失败:`, error);
-          throw error;
-        }
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
-    };
-
-    // 数据管理类
-    const DataManager = {
-     // 核心函数：从 GitHub 加载数据（改用原始文件地址，无频率限制）
-loadDataFromGithub: async function() {
-  console.log('正在从GitHub加载数据...');
-  const apiUrl = 'https://api.github.com/repos/nicolettavoong/sample-management-system/contents/data/sample-management-data.json?ref=main';
-  // 替换成你刚创建的 Token
-  const GITHUB_TOKEN = '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';
-
-  try {
-    const response = await fetch(apiUrl, {
-      headers: {
-        'User-Agent': 'SampleManagementSystem', // GitHub 要求必须加
-        'Authorization': `token ${GITHUB_TOKEN}` // 加认证提升配额
-      }
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      
+      const data = await response.json();
+      const content = atob(data.content);
+      return JSON.parse(content);
+    } catch (error) {
+      console.error(`获取文件 ${path} 失败:`, error);
+      return null;
     }
-
-    const data = await response.json();
-    // API 返回的内容是 base64 编码，需要解码
-    const decodedContent = atob(data.content);
-    const jsonData = JSON.parse(decodedContent);
-    console.log('数据加载成功:', jsonData);
-    return jsonData;
-  } catch (error) {
-    console.error('获取文件失败:', error);
-    console.log('从GitHub获取的数据为空');
-    return null;
+  },
+  
+  // 创建或更新文件
+  async createOrUpdateFile(repo, path, content, message, branch = 'main') {
+    try {
+      // 首先获取当前文件的SHA（如果存在）
+      const url = `https://api.github.com/repos/${CONFIG.githubUsername}/${repo}/contents/${path}?ref=${branch}`;
+      let sha = null;
+      
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          const data = await response.json();
+          sha = data.sha;
+        }
+      } catch (error) {
+        // 文件可能不存在，继续执行
+        console.log(`文件 ${path} 可能不存在，将创建新文件`);
+      }
+      
+      // 准备提交数据
+      const commitData = {
+        message: message,
+        content: btoa(JSON.stringify(content, null, 2)),
+        branch: branch
+      };
+      
+      if (sha) {
+        commitData.sha = sha;
+      }
+      
+      // 发送PUT请求
+      const response = await fetch(url, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `token ${localStorage.getItem('githubToken') || ''}`
+        },
+        body: JSON.stringify(commitData)
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ message: response.statusText }));
+        throw new Error(`提交失败: ${errorData.message || response.statusText}`);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error(`更新文件 ${path} 失败:`, error);
+      throw error;
+    }
   }
-},
+};
 
-// 测试调用（你可以根据自己的需求触发，比如页面加载时）
-// autoRefreshData();,
+// 数据管理类（语法完全修正，逻辑整合）
+const DataManager = {
+  // 核心函数：从 GitHub 加载数据（带 Token 认证，解决 403 限制）
+  loadDataFromGithub: async function() {
+    console.log('正在从GitHub加载数据...');
+    // 复用 CONFIG 配置，避免硬编码
+    const apiUrl = `https://api.github.com/repos/${CONFIG.githubUsername}/sample-management-system/contents/data/sample-management-data.json?ref=main`;
+    // 优先从 localStorage 取 Token，没有则用固定 Token（测试用）
+    const GITHUB_TOKEN = localStorage.getItem('githubToken') || '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';
+
+    try {
+      const response = await fetch(apiUrl, {
+        headers: {
+          'User-Agent': 'SampleManagementSystem', // GitHub API 必须的请求头
+          'Authorization': `token ${GITHUB_TOKEN}` // 认证提升配额
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      // 解码 GitHub 返回的 Base64 内容
+      const decodedContent = atob(data.content);
+      const jsonData = JSON.parse(decodedContent);
+      console.log('数据加载成功:', jsonData);
+      return jsonData;
+    } catch (error) {
+      console.error('获取文件失败:', error);
+      console.log('从GitHub获取的数据为空');
+      return null;
+    }
+  },
+
+  // 自动刷新数据函数（整合到 DataManager 内）
+  autoRefreshData: async function() {
+    console.log('自动刷新数据...');
+    await this.loadDataFromGithub();
+  }
+};
+
+// 可选：页面加载时自动执行（如需启用，取消注释）
+// DataManager.autoRefreshData();
       
       // 初始化数据
       async initializeData() {
