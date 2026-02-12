@@ -1198,38 +1198,33 @@
      // 核心函数：从 GitHub 加载数据（改用原始文件地址，无频率限制）
 async function loadDataFromGithub() {
   console.log('正在从GitHub加载数据...');
-  
-  // 重点：这是 GitHub 原始文件的地址（不是 API 地址）
-  // 格式：https://raw.githubusercontent.com/用户名/仓库名/分支名/文件路径
-  const rawFileUrl = 'https://raw.githubusercontent.com/nicolettavoong/sample-management-system/main/data/sample-management-data.json';
+  const apiUrl = 'https://api.github.com/repos/nicolettavoong/sample-management-system/contents/data/sample-management-data.json?ref=main';
+  // 替换成你刚创建的 Token
+  const GITHUB_TOKEN = '你的GitHub Token';
 
   try {
-    // 发起请求获取原始 JSON 文件
-    const response = await fetch(rawFileUrl);
-    
-    // 检查请求是否成功
+    const response = await fetch(apiUrl, {
+      headers: {
+        'User-Agent': 'SampleManagementSystem', // GitHub 要求必须加
+        'Authorization': `token ${GITHUB_TOKEN}` // 加认证提升配额
+      }
+    });
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
-    // 解析 JSON 数据并返回
+
     const data = await response.json();
-    console.log('数据加载成功:', data);
-    return data;
+    // API 返回的内容是 base64 编码，需要解码
+    const decodedContent = atob(data.content);
+    const jsonData = JSON.parse(decodedContent);
+    console.log('数据加载成功:', jsonData);
+    return jsonData;
   } catch (error) {
-    // 捕获错误并提示
-    console.error('获取文件 data/sample-management-data.json 失败:', error);
+    console.error('获取文件失败:', error);
     console.log('从GitHub获取的数据为空');
     return null;
   }
-}
-
-// 自动刷新数据的函数（保留你的原有逻辑，仅替换内部调用）
-async function autoRefreshData() {
-  console.log('自动刷新数据...');
-  const data = await loadDataFromGithub();
-  // 这里可以添加数据加载成功后的处理逻辑（比如渲染到页面）
-  // 示例：if (data) { renderData(data); }
 },
 
 // 测试调用（你可以根据自己的需求触发，比如页面加载时）
