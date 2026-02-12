@@ -1107,32 +1107,101 @@
     ];
     let currentUser = users[0]; // 当前用户状态
     
-    // 配置 - 用于GitHub Pages部署
-    const CONFIG = {
-      // GitHub Pages仓库信息
-      githubRepo: 'sample-management-system', // 数据仓库名（与HTML文件在同一仓库）
-      githubUsername: 'nicolettavoong', // 替换为你的GitHub用户名
-      // 数据文件路径
-      dataFile: 'data/sample-management-data.json', // 数据文件放在data子目录中
-      // 是否使用GitHub Pages数据（true=使用远程数据，false=使用本地存储）
-      useGithubData: true,
-      // 数据刷新间隔（毫秒）
-      refreshInterval: 10000 // 10秒刷新一次数据，提高实时性
-    };
-
-    // 先定义配置项（确保 CONFIG 存在，避免报错）
+    // ******** 核心修正：只声明一次 CONFIG，合并所有配置 ********
 const CONFIG = {
-  githubUsername: 'nicolettavoong' // 你的 GitHub 用户名
+  githubUsername: 'nicolettavoong', // 仓库用户名
+  repoName: 'sample-management-system', // 仓库名
+  dataFilePath: 'data/sample-management-data.json', // 数据文件路径
+  defaultBranch: 'main' // 默认分支
 };
 
-// GitHub API相关函数
+// GitHub API相关函数（复用 CONFIG，无重复声明）
+const GitHubAPI = {
+  // 获取文件内容
+  async getFileContent(repo = CONFIG.repoName, path = CONFIG.dataFilePath, branch = CONFIG.defaultBranch) {
+    try {
+      const url = `https://api.github.com/repos/${CONFIG.githubUsername}/${repo}/contents/${path}?ref=${branch}`;
+      const response = await fetch(url);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      const content = atob(data.content);
+      return JSON.parse(content);
+    } catch (error) {
+      console.error(`获取文件 ${path} 失败:`, error);
+      return null;
+    }
+  },
+  
+  // 创建或更新文件
+  async createOrUpdateFile(repo = CONFIG.repoName, path = CONFIG.dataFilePath, content, message, branch = CONFIG.defaultBranch) {
+    try {
+      const url = `https://api.github.com/repos/${CONFIG.githubUsername}/${repo}/contents/${path}?ref=${branch}`;
+      let sha = null;
+      
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          const data = await response.json();
+          sha = data.sha;
+        }
+      } catch (error) {
+        console.log(`文件 ${path} 可能不存在，将创建新文件`);
+      }
+      
+      const commitData = {
+        message: message,
+        content: btoa(JSON.stringify(content, null, 2)),
+        branch: branch
+      };
+      
+      if (sha) {
+        commitData.sha = sha;
+      }
+      
+      const response = await fetch(url, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `token ${localStorage.getItem('githubToken') || ''}`
+        },
+        body: JSON.stringify(commitData)
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ message: response.statusText }));
+        throw new Error(`提交失败: ${errorData.message || response.statusText}`);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error(`更新文件 ${path} 失败:`, error);
+      throw error;
+    }
+  }
+};
+
+// 数据管理类（加载 nicolettavoong 仓库的正确数据）
 const DataManager = {
   loadDataFromGithub: async function() {
     console.log('正在从GitHub加载数据...');
-    const rawFileUrl = 'https://raw.githubusercontent.com/nicolettavoong/sample-management-system/main/data/sample-management-data.json';
+    // 使用 CONFIG 拼接地址，避免硬编码
+    const rawFileUrl = `https://raw.githubusercontent.com/${CONFIG.githubUsername}/${CONFIG.repoName}/${CONFIG.defaultBranch}/${CONFIG.dataFilePath}`;
 
     try {
-      const response = await fetch(rawFileUrl);
+      // 禁止缓存，确保加载最新数据
+      const response = await fetch(rawFileUrl, {
+        cache: 'no-cache',
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache',
+          'Expires': '0'
+        }
+      });
+
       if (response.status === 404) {
         throw new Error(`404 Not Found：文件地址错误：${rawFileUrl}`);
       }
@@ -1140,15 +1209,14 @@ const DataManager = {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      // 第一步：打印原始文本（确认下载的是正确内容）
+      // 打印原始文本验证数据
       const rawText = await response.text();
       console.log('📝 原始文本内容（前500字符）:', rawText.substring(0, 500));
-      console.log('📝 原始文本完整内容:', rawText); // 查看完整文本
+      console.log('📝 原始文本完整内容:', rawText);
 
-      // 第二步：解析JSON并打印完整结构
+      // 解析JSON并验证
       const jsonData = JSON.parse(rawText);
       console.log('✅ 完整JSON数据（展开查看）:', jsonData);
-      // 打印关键字段，方便快速验证
       console.log('🔍 关键数据验证：');
       console.log('   - samples数量:', jsonData.samples?.length || '无samples字段');
       console.log('   - categories数量:', jsonData.categories?.length || '无categories字段');
@@ -1168,7 +1236,7 @@ const DataManager = {
   }
 };
 
-// 执行加载
+// 执行自动刷新
 DataManager.autoRefreshData();
       
       // 初始化数据
